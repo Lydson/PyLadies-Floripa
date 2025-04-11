@@ -2,7 +2,7 @@
     width: 1033px;
     height: 474px;
     background-color: white;
-    border-radius: 16px;
+    border-radius: 50px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
     display: flex;
     justify-content: center;
@@ -11,15 +11,17 @@
   
   .modal-card {
     display: flex;
-    border-radius: 16px;
     overflow: hidden;
+    margin: 36px;
+    flex-direction: row;
+    flex-wrap: wra;
   }
   
   .modal-img {
     width: 518px;
     height: 293px;
     object-fit: cover;
-    border-radius: 16px 0 0 16px;
+    border-radius: 50px;
   }
   
   .modal-texto {
