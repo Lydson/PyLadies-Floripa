@@ -57,5 +57,5 @@ Este projeto está sendo desenvolvido por um grupo de seis integrantes do curso 
 - Nikolas Isler da Costa
 
 ---
-Siga as PyLadies Floripa e participe da nossa comunidade! 🚀
+Siga as [PyLadies Floripa](https://www.instagram.com/pyladiesfloripa/) e participe da comunidade! 🚀
 
