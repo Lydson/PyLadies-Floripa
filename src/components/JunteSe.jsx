@@ -1,8 +1,11 @@
 import React from 'react';
 import './JunteSe.css';
 
-const JunteSe = () => {
+const JunteSe = ({ isOpen, onClose }) => {
+  if (!isOpen) return null;
+
   return (
+    <div className="modal-overlay">
       <div className="junte-card">
         <h2 className="junte-title">Junte-se a nós</h2>
         <form className="junte-form">
@@ -20,10 +23,11 @@ const JunteSe = () => {
           </label>
           <div className="junte-buttons">
             <button type="submit" className="btn-enviar">Enviar</button>
-            <button type="button" className="btn-cancelar">Cancelar</button>
+            <button type="button" onClick={onClose}>Cancelar</button>
           </div>
         </form>
       </div>
+    </div>
   );
 };
 
