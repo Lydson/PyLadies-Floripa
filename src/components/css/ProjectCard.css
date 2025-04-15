@@ -1,0 +1,21 @@
+.project-card-img {
+  min-width: 400px;
+  padding: 10px;
+  border: 1px solid grey;
+  border-radius: 10px;
+}
+
+.primary-button-open {
+  background-color: #DD8B20;
+  color: white;
+  border: none;
+  padding: 8px 24px;
+  border-radius: 90px;
+  font-size: 24px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.primary-button-open:hover {
+  background-color: #bb6e0a;
+}

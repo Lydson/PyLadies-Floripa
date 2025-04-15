@@ -1,5 +1,5 @@
 import React from 'react';
-import './ModalAgradecimento.css';
+import './css/ModalAgradecimento.css';
 
 const ModalAgradecimento = ({ isOpen, onClose }) => {
   if (!isOpen) return null;

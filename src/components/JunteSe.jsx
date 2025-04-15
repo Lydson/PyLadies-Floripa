@@ -1,5 +1,5 @@
 import React from 'react';
-import './JunteSe.css';
+import './css/JunteSe.css';
 
 const JunteSe = ({ isOpen, onClose }) => {
   if (!isOpen) return null;

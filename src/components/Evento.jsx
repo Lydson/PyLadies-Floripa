@@ -1,5 +1,5 @@
 import React from 'react';
-import './Evento.css';
+import './css/Evento.css';
 
 const Evento = ({ isOpen, onClose }) => {
   if (!isOpen) return null;
