@@ -1,3 +1,7 @@
+html, body {
+    scroll-behavior: smooth !important;
+  }  
+  
 header {
     padding: 1% 2.5%;
     background-color: #4A9CB4;
