@@ -8,7 +8,7 @@ Criar um Single Page Application (SPA) responsivo e moderno para a PyLadies Flor
 
 ## Tecnologias Utilizadas
 - **React.js** com Vite para desenvolvimento front-end
-- **Typescript** para estilização
+- **Bootstrap** para estilização
 - **Figma** para prototipação da interface do usuário
 - **GitHub** para controle de versão e colaboração
 
