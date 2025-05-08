@@ -1,0 +1,62 @@
+html, body {
+    scroll-behavior: smooth !important;
+  }  
+  
+header {
+    padding: 1% 2.5%;
+    background-color: #4A9CB4;
+    align-items: center;
+    justify-content: space-between;
+    width: 100vw;
+
+    > ul {
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+    }
+
+    > ul li {
+        width: 100%;
+    }
+
+    > ul li a {
+        color: #ffffff;
+        font-weight: 500;
+        font-size: 22px;
+    }
+
+    > ul li a:hover {
+        color: #e6e6e6;
+        font-weight: 600;
+    }
+}
+
+.banner-img {
+    background-size: cover;
+    background-position: center;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    padding: 3% 7%;
+
+    p {
+        font-size: 1.5em;
+    }
+}
+
+.about-us-image {
+    max-height: 500px;
+    object-fit: contain;
+    display: block;
+}
+
+footer {
+    background-color: #4A9CB4;
+    padding: 3% 10%;
+}

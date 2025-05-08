@@ -1,0 +1,93 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Remove estilos padrão de elementos HTML */
+html, body {
+  height: 100%;
+  font-family: sans-serif;
+  line-height: 1.5;
+  background: #fff;
+  color: #000;
+}
+
+/* Remove bordas, listas e estilos extras */
+ul, ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button, input, select, textarea {
+  font: inherit;
+  border: none;
+  background: none;
+  outline: none;
+}
+
+img, video {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Tira aspas de blockquotes/cite */
+blockquote, q {
+  quotes: none;
+}
+
+blockquote::before, blockquote::after,
+q::before, q::after {
+  content: '';
+}
+
+ul {
+  list-style: none;
+}
+
+a, li a {
+  text-decoration: none;
+  color: #272727;
+}
+
+.logo {
+  width: 15%;
+  height: 15%;
+  max-width: 100px;
+  width: 100px;
+}
+
+.logo-title {
+  width: 43%;
+  max-width: 300px;
+  min-width: 200px;
+  height: 50px;
+}
+
+.primary-button {
+  margin-top: 24px;
+  background-color: #DD8B20;
+  color: white;
+  border: none;
+  padding: 8px 7%;
+  border-radius: 90px;
+  font-size: 3vw;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.primary-button:hover {
+  background-color: #bb6e0a;
+}
+
+.divider {
+  width: 100px;
+  height: 6px;
+  background-color: red;
+}

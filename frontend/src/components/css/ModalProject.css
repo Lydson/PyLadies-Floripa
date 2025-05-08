@@ -1,0 +1,115 @@
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+  }
+  
+  .modal-container {
+    width: 90%;
+    max-width: 1000px;
+    background-color: white;
+    border-radius: 24px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    padding: 2rem;
+    animation: fadeIn 0.3s ease;
+  }
+  
+  .modal-title {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+    color: #dd8b20;
+  }
+  
+  .modal-card {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .modal-img {
+    width: 350px;
+    max-width: 100%;
+    height: auto;
+    border-radius: 16px;
+    object-fit: cover;
+    flex-shrink: 0;
+  }
+  
+  .modal-text {
+    flex: 1;
+  }
+  
+  .modal-text p {
+    font-size: 1.1rem;
+    color: #333;
+    margin-bottom: 1rem;
+  }
+  
+  .modal-text2 {
+    margin-top: 2rem;
+    font-size: 1.05rem;
+    color: #444;
+    line-height: 1.6;
+  }
+  
+  /* Botões lado a lado */
+  .modal-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 20px;
+  }
+  
+  
+  .subscribe-btn {
+    padding: 0.6rem 1.2rem;
+    background-color: #dd8b20;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .subscribe-btn:hover {
+    background-color: #c2771c;
+  }
+  
+  .close-btn {
+    padding: 0.6rem 1.2rem;
+    background-color: #ccc;
+    border: none;
+    border-radius: 8px;
+    color: #333;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .close-btn:hover {
+    background-color: #999;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: scale(0.95);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  
