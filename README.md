@@ -6,6 +6,25 @@ Este é o site oficial da PyLadies Floripa, um grupo focado em incentivar a part
 ## Objetivo
 Criar um Single Page Application (SPA) responsivo e moderno para a PyLadies Floripa, facilitando o acesso a informações sobre eventos, projetos, membros e formas de participação na comunidade.
 
+## Diagrama Entidade-Relacionamento (DER)
+O diagrama abaixo representa o modelo de dados utilizado no sistema PyLadies Floripa. Ele foi criado com base nas necessidades da aplicação e serve como referência para o desenvolvimento do backend e do banco de dados.
+
+![Diagrama Entidade-Relacionamento do PyLadies Floripa](https://github.com/Lydson/PyLadies-Floripa/blob/main/frontend/src/assets/Diagrama_Entidade_Relacionamento_Pyladies.jpeg?raw=true)
+
+Descrição das Entidades:
+### Inscrição
+Armazena os dados de participantes inscritos, como nome, e-mail, nível de experiência, referências e autorização de uso de imagem.
+- Chave primária: id_inscricao.
+- Se relaciona com a entidade Evento, indicando a qual evento a inscrição pertence.
+
+### Evento
+Contém informações sobre os eventos promovidos, incluindo tema, data, horário, local, descrição e observações.
+- Chave primária: id_evento.
+
+### Projeto
+Armazena os projetos apresentados nos eventos ou realizados pela organização. Cada projeto possui um nome, objetivo, descrição, público-alvo e formato.
+- Chave primária: id_projeto.
+
 ## Tecnologias Utilizadas
 - **React.js** com Vite para desenvolvimento front-end
 - **Bootstrap** para estilização
