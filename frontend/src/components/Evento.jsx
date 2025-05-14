@@ -1,7 +1,10 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './css/Evento.css';
+import ModalSubscribeEventoPresencial from './ModalSubscribeEventoPresencial';
 
 const Evento = ({ isOpen, onClose }) => {
+  const [isSubscribeOpen, setIsSubscribeOpen] = useState(false);
+
   if (!isOpen) return null;
 
   return (
@@ -28,11 +31,16 @@ const Evento = ({ isOpen, onClose }) => {
               🎟 <strong>Entrada gratuita!</strong> Mas as vagas são limitadas. Garanta a sua e venha fazer parte da nossa comunidade!
             </p>
             <div className="event-buttons">
-              <button type="submit" className="btn-enviar">Inscreva-se</button>
+              <button type="button" className="btn-enviar" onClick={() => setIsSubscribeOpen(true)}>
+                Inscreva-se
+              </button>
               <button type="button" className="btn-cancelar" onClick={onClose}>Cancelar</button>
             </div>
           </div>
         </div>
+
+        {/* Modal de Inscrição */}
+        <ModalSubscribeEventoPresencial isOpen={isSubscribeOpen} onClose={() => setIsSubscribeOpen(false)} />
       </div>
     </div>
   );
