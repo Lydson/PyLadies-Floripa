@@ -16,5 +16,5 @@ app.use('/api', apiRoutes);
 
 // Inicia o servidor
 app.listen(PORT, () => {
-    console.log(`rodando na porta ${PORT}`);
+    console.log(`Sistema Funcional! ${PORT}`);
 });

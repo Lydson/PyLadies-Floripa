@@ -28,7 +28,7 @@ const ModalSubscribe = ({ isOpen, onClose }) => {
     };
 
     try {
-      const response = await fetch('http://localhost:3001/api/inscricao', {
+      const response = await fetch('http://localhost:3001/api/inscricaoProjeto', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'

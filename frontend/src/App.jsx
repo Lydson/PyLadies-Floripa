@@ -8,6 +8,7 @@ import BannerButton from './components/BannerButton';
 import ProjectCard from './components/ProjectCard';
 import Evento from './components/Evento';
 import ModalProject from './components/ModalProject';
+import ModalCadEvento from './components/ModalCadEvento';
 
 // Imagens
 import TechLadies from './assets/tech-ladies.png';
@@ -29,6 +30,8 @@ import PyLadies from './assets/pyladies.png';
 import OpenSource from './assets/open-source.png';
 import Workshop from './assets/workshop.png';
 import PythonCourse from './assets/python-course.png';
+import EventoPyladies from './assets/workshop.png';
+
 
 function App() {
   // Estado para controle dos modais
@@ -93,6 +96,27 @@ function App() {
             <BannerButton img={Banner3} onPress={() => abrirModal('evento')} />
           </div>
         </section>
+        <div className="divider" />
+
+        {/* Projetos */}
+        <section id="cadEventosPresenciais" className="mb-5">
+          <h1 className="ms-5 mt-4 mb-4">Cadastrar novos eventos presenciais</h1>
+          <div className="row">
+            <ProjectCard
+              title="Encontro PyLadies"
+              img={EventoPyladies}
+              onPress={() => abrirModal('cadEvento')}
+            />
+          </div>
+        </section>
+
+        {modalAberto === 'cadEvento' && (
+          <ModalCadEvento
+            isOpen={true}
+            onClose={fecharModal}
+          />
+        )}
+
 
         {modalAberto === 'evento' && <Evento isOpen={modalAberto} onClose={fecharModal} />}
 

@@ -2,22 +2,30 @@ const express = require('express');
 const router = express.Router();
 
 
-router.post('/eventosProjetos', (req, res) => {
-    const { nome, descricao, data, local } = req.body;
+router.post('/cadastroEventoPresencial', (req, res) => {
+    const { nomeEvento, dataEvento, horario, local, descricao } = req.body;
 
     res.json({
         message: 'Evento cadastrado com sucesso!',
-        dados: { nome, descricao, data, local }
+        dados: { nomeEvento, dataEvento, horario, local, descricao }
     });
+
+        console.log(
+        `\nEVENTO CADASTRADO COM SUCESSO!` +
+        `\nNome Evento: ${nomeEvento}` +
+        `\nData do Evento: ${dataEvento}` +
+        `\nHorario: ${horario}` +
+        `\nlocal: ${local}` +
+        `\nDescricao: ${descricao}\n`
+    );
 });
 
 router.post('/inscricaoEventoPresencial', (req, res) => {
-    const { 
+    const {
         nomePessoa,
         email,
-        telefone,
         autorizoImagem,
-        idEvento 
+        idEvento
     } = req.body;
 
     res.json({
@@ -25,17 +33,15 @@ router.post('/inscricaoEventoPresencial', (req, res) => {
         dados: {
             nomePessoa,
             email,
-            telefone,
             autorizoImagem,
             idEvento
         }
     });
 
     console.log(
-        `\n[INSCRIÇÃO PRESENCIAL]` +
+        `\nINSCRIÇÃO PRESENCIAL REALIZADA COM SUCESSO!` +
         `\nNome: ${nomePessoa}` +
         `\nEmail: ${email}` +
-        `\nTelefone: ${telefone}` +
         `\nAutorizo Imagem: ${autorizoImagem}` +
         `\nID do Evento: ${idEvento}\n`
     );
@@ -64,12 +70,13 @@ router.post('/inscricaoProjeto', (req, res) => {
         }
     },
         console.log(
+            `\nINSCRIÇÃO EM PROJETO REALIZADA COM SUCESSO!` +
             `\nNome: ${nomePessoa}` +
             `\nEmail: ${email}` +
             `\nExperiência: ${experiencia}` +
             `\nAutorizo Imagem: ${autorizoImagem}` +
             `\nOrigem: ${origem}` +
-            `\nID do Evento/Projeto: ${idEventoProjeto}\n`
+            `\nID do Projeto: ${idEventoProjeto}\n`
         ));
 });
 
