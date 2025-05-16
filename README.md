@@ -57,14 +57,14 @@ O design do site foi criado no Figma e pode ser acessado neste link:
 Abaixo uma imagem de como ficou o protótipo:
 ![Página principal da Pyladies Floripa](https://github.com/Lydson/PyLadies-Floripa/blob/main/frontend/src/assets/SPA%20-%20PyLadies%20Floripa.png)
 
-## 🖥️ Backend
+## Backend
 O backend do projeto é desenvolvido com **Node.js** e utiliza o framework **Express** para a criação de APIs RESTful. A estrutura do projeto é modularizada, facilitando a manutenção e escalabilidade.
 
-### 📂 Estrutura de Pastas
+### Estrutura de Pastas
 - `index.js`: Arquivo principal que inicializa o servidor, configura middlewares como `cors`, `morgan` e define as rotas da aplicação.
 - `routes/api.js`: Contém as definições das rotas da API.
 
-### 🔐 Variáveis de Ambiente
+### Variáveis de Ambiente
 Este projeto utiliza variáveis de ambiente para configurar o servidor e a conexão com o banco de dados.
 Para rodar o projeto localmente, crie um arquivo `.env` na raiz da pasta `backend` com o seguinte formato:
 ```env
