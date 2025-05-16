@@ -2,7 +2,7 @@
 
 ## Sobre o Projeto
 Este é o site oficial da PyLadies Floripa, um grupo focado em incentivar a participação de mulheres na programação e na comunidade Python. O site foi desenvolvido como parte do nosso Projeto Integrador no Senac. Abaixo o link para acessar o site no Vercel:
-![Site Pyladies](https://pyladies-floripa.vercel.app/)
+https://pyladies-floripa.vercel.app/
 
 ## Equipe
 Este projeto está sendo desenvolvido por um grupo de seis integrantes do curso de Tecnologia em Sistemas para Internet do Senac, incluindo membros da comunidade PyLadies.
