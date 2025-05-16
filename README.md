@@ -1,7 +1,17 @@
 # PyLadies Floripa - Website Oficial
 
 ## Sobre o Projeto
-Este é o site oficial da PyLadies Floripa, um grupo focado em incentivar a participação de mulheres na programação e na comunidade Python. O site foi desenvolvido como parte do nosso Projeto Integrador no Senac.
+Este é o site oficial da PyLadies Floripa, um grupo focado em incentivar a participação de mulheres na programação e na comunidade Python. O site foi desenvolvido como parte do nosso Projeto Integrador no Senac. Abaixo o link para acessar o site no Vercel:
+![Site Pyladies](https://pyladies-floripa.vercel.app/)
+
+## Equipe
+Este projeto está sendo desenvolvido por um grupo de seis integrantes do curso de Tecnologia em Sistemas para Internet do Senac, incluindo membros da comunidade PyLadies.
+- Cristiane Silva San Miguel
+- Lydson Henrique San Miguel Garcia
+- Raphael Honorato e Silva
+- Thiago de Holanda Silva
+- Tiago Tinoco Martins dos Santos
+- Nikolas Isler da Costa
 
 ## Objetivo
 Criar um Single Page Application (SPA) responsivo e moderno para a PyLadies Floripa, facilitando o acesso a informações sobre eventos, projetos, membros e formas de participação na comunidade.
@@ -47,6 +57,21 @@ O design do site foi criado no Figma e pode ser acessado neste link:
 Abaixo uma imagem de como ficou o protótipo:
 ![Página principal da Pyladies Floripa](https://github.com/Lydson/PyLadies-Floripa/blob/main/frontend/src/assets/SPA%20-%20PyLadies%20Floripa.png)
 
+## 🖥️ Backend
+O backend do projeto é desenvolvido com **Node.js** e utiliza o framework **Express** para a criação de APIs RESTful. A estrutura do projeto é modularizada, facilitando a manutenção e escalabilidade.
+
+### 📂 Estrutura de Pastas
+- `index.js`: Arquivo principal que inicializa o servidor, configura middlewares como `cors`, `morgan` e define as rotas da aplicação.
+- `routes/api.js`: Contém as definições das rotas da API.
+
+### 🔐 Variáveis de Ambiente
+Este projeto utiliza variáveis de ambiente para configurar o servidor e a conexão com o banco de dados.
+Para rodar o projeto localmente, crie um arquivo `.env` na raiz da pasta `backend` com o seguinte formato:
+```env
+PORT=3001
+DATABASE_URL=postgres://usuario:senha@host:porta/banco
+
+
 ## Como contribuir
 1. Clone o repositório:
    ```sh
@@ -62,18 +87,6 @@ Abaixo uma imagem de como ficou o protótipo:
    npm run dev
    ```
 4. Para contribuir, crie um branch e faça um pull request!
-
-## Status do Projeto
-O site está em desenvolvimento e até o momento, o mockup da interface está pronto no Figma. Estamos atualmente na fase de implementação do código com React.js.
-
-## Equipe
-Este projeto está sendo desenvolvido por um grupo de seis integrantes do curso de Tecnologia em Sistemas para Internet do Senac, incluindo membros da comunidade PyLadies.
-- Cristiane Silva San Miguel
-- Lydson Henrique San Miguel Garcia
-- Raphael Honorato e Silva
-- Thiago de Holanda Silva
-- Tiago Tinoco Martins dos Santos
-- Nikolas Isler da Costa
 
 ---
 Siga as [PyLadies Floripa](https://www.instagram.com/pyladiesfloripa/) e participe da comunidade! 🚀
