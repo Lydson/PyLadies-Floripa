@@ -57,7 +57,7 @@ const ModalCadastrarEvento = ({ isOpen, onClose }) => {
                     <input type="text" name="local" value={formData.local} onChange={handleChange} required />
 
                     <label>Descrição:</label>
-                    <textarea name="descricao" value={formData.descricao} onChange={handleChange} rows="4" required></textarea>
+                    <textarea name="descricao" value={formData.descricao} onChange={handleChange} rows="2" required></textarea>
 
                     <div className={styles.eventButtons}>
                         <button type="submit" className={styles.btnEnviar}>Cadastrar</button>
