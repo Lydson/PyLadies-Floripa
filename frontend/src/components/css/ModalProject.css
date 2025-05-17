@@ -52,13 +52,13 @@
   
   .modal-text p {
     font-size: 1.1rem;
-    color: #333;
-    margin-bottom: 1rem;
+    color: #444;
+    line-height: 1.6;
   }
   
   .modal-text2 {
+    font-size: 0.9rem;
     margin-top: 2rem;
-    font-size: 1.05rem;
     color: #444;
     line-height: 1.6;
   }

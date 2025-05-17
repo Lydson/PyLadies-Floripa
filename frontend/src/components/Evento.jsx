@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './css/Evento.css';
+import Banner1 from '../assets/banner-1.png';
 import ModalSubscribeEventoPresencial from './ModalSubscribeEventoPresencial';
 
 const Evento = ({ isOpen, onClose }) => {
@@ -14,7 +15,7 @@ const Evento = ({ isOpen, onClose }) => {
         <div className="modal-card">
           <img
             className="modal-img"
-            src="https://media.canva.com/v2/files/uri:ifs%3A%2F%2FM%2Fdaeaabad-f395-4f10-824c-6649632b4108?csig=AAAAAAAAAAAAAAAAAAAAALR7yLXmbNE8uApnch6ua9h3E8krFbzbkWsTkQ_KXEeE&exp=1744687628&signer=media-rpc&token=AAIAAU0AJGRhZWFhYmFkLWYzOTUtNGYxMC04MjRjLTY2NDk2MzJiNDEwOAAAAAABljd8fuAJ-_ANOCjgYNGLm-e0n8m3d59CdiRgQWCmaZ_BKtDeYg"
+            src={Banner1}
             alt="Imagem do evento das PyLadies"
           />
           <div className="modal-texto">

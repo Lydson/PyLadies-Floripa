@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './css/ModalProject.css';
 import pybookImg from '../assets/pybook.png';
-import ModalSubscribe from './ModalSubscribe'; // certifique-se de que o caminho está correto
+import ModalSubscribe from './ModalSubscribe'; 
 
 const Project = ({ isOpen, onClose }) => {
   const [isSubscribeOpen, setIsSubscribeOpen] = useState(false);

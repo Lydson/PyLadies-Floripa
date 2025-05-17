@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-// import './css/ModalCadastrarEvento.css';
+import styles from './css/ModalCadastrarEvento.module.css';
 
 const ModalCadastrarEvento = ({ isOpen, onClose }) => {
     const [formData, setFormData] = useState({
@@ -40,10 +40,10 @@ const ModalCadastrarEvento = ({ isOpen, onClose }) => {
     };
 
     return (
-        <div className="modal-overlay" onClick={onClose}>
-            <div className="modal-container" onClick={(e) => e.stopPropagation()}>
-                <h2 className="modal-title">Cadastrar Novo Evento</h2>
-                <form onSubmit={handleSubmit} className="modal-form">
+        <div className={styles.modalOverlay} onClick={onClose}>
+            <div className={styles.modalContainer} onClick={(e) => e.stopPropagation()}>
+                <h2 className={styles.modalTitle}>Cadastrar Novo Evento</h2>
+                <form onSubmit={handleSubmit} className={styles.modalForm}>
                     <label>Nome do Evento:</label>
                     <input type="text" name="nomeEvento" value={formData.nomeEvento} onChange={handleChange} required />
 
@@ -59,9 +59,9 @@ const ModalCadastrarEvento = ({ isOpen, onClose }) => {
                     <label>Descrição:</label>
                     <textarea name="descricao" value={formData.descricao} onChange={handleChange} rows="4" required></textarea>
 
-                    <div className="event-buttons">
-                        <button type="submit" className="btn-enviar">Cadastrar</button>
-                        <button type="button" className="btn-cancelar" onClick={onClose}>Cancelar</button>
+                    <div className={styles.eventButtons}>
+                        <button type="submit" className={styles.btnEnviar}>Cadastrar</button>
+                        <button type="button" className={styles.btnCancelar} onClick={onClose}>Cancelar</button>
                     </div>
                 </form>
             </div>

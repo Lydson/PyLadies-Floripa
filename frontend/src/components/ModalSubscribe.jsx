@@ -48,7 +48,7 @@ const ModalSubscribe = ({ isOpen, onClose }) => {
   return (
     <div className="modal-overlay">
       <div className="subscribe-card">
-        <h2 className="subscribe-title">Inscrição no Evento</h2>
+        <h2 className="subscribe-title">Inscrição</h2>
         <form className="subscribe-form" onSubmit={handleSubmit}>
           <label>
             Nome
@@ -96,7 +96,7 @@ const ModalSubscribe = ({ isOpen, onClose }) => {
           </fieldset>
 
           <label>
-            Como ficou sabendo do evento?
+            Como ficou sabendo do evento/projeto?
             <select
               name="origem"
               value={origem}
