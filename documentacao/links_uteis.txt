@@ -1,0 +1,15 @@
+Abaixo todos os links relacionados ao projeto Pyladies Floripa:
+- Site publicado: 
+https://pyladies-floripa.vercel.app/
+
+- Diagrama Entidade Relacionamento:
+https://github.com/Lydson/PyLadies-Floripa/blob/main/documentacao/Diagrama_Entidade_Relacionamento_Pyladies.jpeg
+
+- Protótipo Figma:
+https://www.figma.com/design/PZI7I2eIyr81m0OI3Lam5L/GRUPO-2---SITE.-PYLADIES?node-id=63-262&t=61I3y6mtkeAX1czI-1
+
+- Repositório GitHub: 
+https://github.com/Lydson/PyLadies-Floripa
+
+Link do vídeo de demonstração: 
+
