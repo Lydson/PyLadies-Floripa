@@ -6,6 +6,10 @@ Este é o site da PyLadies Floripa, um grupo focado em incentivar a participaç�
 
 <https://pyladies-floripa.vercel.app/>
 
+Vídeo demonstrativo:
+
+<https://youtu.be/OE1lQifYpYk>
+
 ## Equipe
 
 Este projeto está sendo desenvolvido por um grupo de seis integrantes do curso de Tecnologia em Sistemas para Internet do Senac, incluindo membros da comunidade PyLadies.
