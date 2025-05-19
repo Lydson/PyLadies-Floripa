@@ -98,7 +98,7 @@ function App() {
         </section>
         <div className="divider" />
 
-        {/* Projetos */}
+        {/* Cadastro de novos projetos - OPÇÃO PARA ADMIN
         <section id="cadEventosPresenciais" className="mb-5">
           <h1 className="ms-5 mt-4 mb-4">Cadastrar novos eventos presenciais</h1>
           <div className="row">
@@ -121,6 +121,7 @@ function App() {
         {modalAberto === 'evento' && <Evento isOpen={modalAberto} onClose={fecharModal} />}
 
         <div className="divider" />
+        */}
 
         {/* Projetos */}
         <section id="projetos" className="mb-5">
