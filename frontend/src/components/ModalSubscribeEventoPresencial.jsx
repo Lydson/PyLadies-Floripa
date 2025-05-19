@@ -5,25 +5,25 @@ const ModalSubscribeEventoPresencial = ({ isOpen, onClose }) => {
   const [nome, setNome] = useState('');
   const [email, setEmail] = useState('');
   const [experiencia, setExperiencia] = useState('');
-  const [origem, setOrigem] = useState('');
-  const [autorizoImagem, setAutorizoImagem] = useState(false);
+  const [referencia, setreferencia] = useState('');
+  const [autorizacaoImagem, setautorizacaoImagem] = useState(false);
 
   if (!isOpen) return null;
 
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    if (!autorizoImagem) {
+    if (!autorizacaoImagem) {
       alert('Você precisa autorizar o uso da imagem para continuar.');
       return;
     }
 
     const inscricaoData = {
-      nomePessoa: nome,
+      nome,
       email,
       experiencia,
-      origem,
-      autorizoImagem,
+      referencia,
+      autorizacaoImagem,
       idEvento: 1
     };
 
@@ -98,9 +98,9 @@ const ModalSubscribeEventoPresencial = ({ isOpen, onClose }) => {
           <label>
             Como ficou sabendo do evento?
             <select
-              name="origem"
-              value={origem}
-              onChange={(e) => setOrigem(e.target.value)}
+              name="referencia"
+              value={referencia}
+              onChange={(e) => setreferencia(e.target.value)}
               required
             >
               <option value="">Selecione</option>
@@ -114,9 +114,9 @@ const ModalSubscribeEventoPresencial = ({ isOpen, onClose }) => {
           <label className="checkbox-group">
             <input
               type="checkbox"
-              name="autorizoImagem"
-              checked={autorizoImagem}
-              onChange={(e) => setAutorizoImagem(e.target.checked)}
+              name="autorizacaoImagem"
+              checked={autorizacaoImagem}
+              onChange={(e) => setautorizacaoImagem(e.target.checked)}
               required
             />
             Autorizo o uso da minha imagem para fotos e vídeos do evento.
