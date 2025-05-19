@@ -46,6 +46,7 @@ O diagrama abaixo representa o modelo de dados utilizado no sistema PyLadies Flo
 
 ![Diagrama Entidade-Relacionamento do PyLadies Floripa](https://github.com/Lydson/PyLadies-Floripa/blob/main/documentacao/Diagrama_Entidade_Relacionamento_Pyladies.jpeg?raw=true)
 
+
 Descrição das Entidades:
 
 ### Inscrição
