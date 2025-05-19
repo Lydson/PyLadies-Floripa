@@ -7,7 +7,7 @@ async function connect() {
         return global.connection;
 
     const mysql = require("mysql2/promise");
-    const connection = await mysql.createConnection(process.env.URL_DB);
+    const connection = await mysql.createConnection(process.env.DATABASE_URL);
     console.log('BANCO DE DADOS CONECTADO');
     global.connection = connection;
     return connection;
