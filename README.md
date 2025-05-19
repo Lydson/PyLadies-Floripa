@@ -44,7 +44,7 @@ O site segue uma abordagem de **long strip**, onde a navegação ocorre dentro d
 
 O diagrama abaixo representa o modelo de dados utilizado no sistema PyLadies Floripa. Ele foi criado com base nas necessidades da aplicação e serve como referência para o desenvolvimento do backend e do banco de dados.
 
-![Diagrama Entidade-Relacionamento do PyLadies Floripa](https://github.com/Lydson/PyLadies-Floripa/blob/main/frontend/src/assets/Diagrama_Entidade_Relacionamento_Pyladies.jpeg?raw=true)
+![Diagrama Entidade-Relacionamento do PyLadies Floripa](https://github.com/Lydson/PyLadies-Floripa/blob/main/frontend/src/assets/Diagrama_Entidade_Relacionamento_Pyladies.jpeg)
 
 Descrição das Entidades:
 
@@ -60,12 +60,6 @@ Armazena os dados de participantes inscritos, como nome, e-mail, nível de exper
 Contém informações sobre os eventos promovidos, incluindo tema, data, horário, local, descrição e observações.
 
 - Chave primária: idEvento.
-
-### Projeto
-
-Armazena os projetos apresentados nos eventos ou realizados pela organização. Cada projeto possui um nome, objetivo, descrição, público-alvo e formato.
-
-- Chave primária: idProjeto.
 
 ## Prototipação no Figma
 
