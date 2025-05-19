@@ -44,7 +44,7 @@ O site segue uma abordagem de **long strip**, onde a navegação ocorre dentro d
 
 O diagrama abaixo representa o modelo de dados utilizado no sistema PyLadies Floripa. Ele foi criado com base nas necessidades da aplicação e serve como referência para o desenvolvimento do backend e do banco de dados.
 
-![Diagrama Entidade-Relacionamento do PyLadies Floripa](https://raw.githubusercontent.com/Lydson/PyLadies-Floripa/refs/heads/main/documentacao/Diagrama_Entidade_Relacionamento_Pyladies.jpeg)
+![Diagrama Entidade-Relacionamento do PyLadies Floripa](https://raw.githubusercontent.com/Lydson/PyLadies-Floripa/refs/heads/main/documentacao/Diagrama_Entidade_Relacionamento_Pyladies.jpeg?raw=true)
 
 
 Descrição das Entidades:
