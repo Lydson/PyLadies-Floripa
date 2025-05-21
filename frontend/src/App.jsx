@@ -109,7 +109,7 @@ function App() {
             />
           </div>
         </section>
-
+        */}
         {modalAberto === 'cadEvento' && (
           <ModalCadEvento
             isOpen={true}
@@ -121,7 +121,7 @@ function App() {
         {modalAberto === 'evento' && <Evento isOpen={modalAberto} onClose={fecharModal} />}
 
         <div className="divider" />
-        */}
+        
 
         {/* Projetos */}
         <section id="projetos" className="mb-5">
